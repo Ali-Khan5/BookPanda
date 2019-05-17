@@ -1,0 +1,181 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.BgNav {
+  list-style-type: none;
+  display: block;
+}
+.BgSmallNav{
+    list-style-type: none;
+}
+.BgNav li {
+  display: inline;
+  font-size: 0.95em;
+  font-weight: bold;
+  padding: 0px 20px;
+  letter-spacing: 4px;
+}
+.Icon {
+  height: 40px;
+  width: 40px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.iconText {
+  font-weight: bold;
+  color: purple;
+  margin-top: -5px;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  /* border:2px solid black; */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+.Header > div {
+  /* border:2px solid black; */
+}
+.MainContent {
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 70px;
+}
+.hamburger {
+  font-size: 2em;
+  
+  padding-right: 20px;
+}
+
+.description {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.details {
+  border-bottom: 2px solid black;
+}
+.Is-bold {
+  font-weight: bold;
+}
+.about {
+  border-bottom: 2px solid black;
+}
+.AuthorText {
+  padding: 10px;
+}
+.book {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.img-fluid {
+  width: 100%;
+}
+
+.firstBox {
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.secondbox {
+  display: flex;
+  padding: 10px;
+
+  align-items: baseline;
+  margin-left: 10px;
+}
+.is-pink {
+  color: #f2849e;
+  font-weight: bold;
+}
+.is-big {
+  font-size: 1.4em;
+}
+.is-star {
+  color: goldenrod;
+}
+.top {
+  margin-top: -20px;
+}
+.add-to-cart {
+  margin-left: 0px;
+  padding: 10px;
+  margin: 5px 0px 5px 0px;
+  width: 95%;
+  background-color: #f2849e;
+  border: 1px solid #f2849e;
+  color: white;
+  font-size: 1.2em;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .MainContent {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .img-fluid {
+    height: 100%;
+    width: 100%;
+  }
+  .book {
+    margin: 10px 0px;
+  }
+  .BgNav{
+    display: none;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .img-fluid {
+    height: 100%;
+    width: 100%;
+  }
+  .book {
+    margin: 10px 0px;
+  }
+  .BgNav{
+      display: none;
+  }
+  .hamburger {
+   
+    display: block;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .BgNav{
+        display: none;
+    }
+    .hamburger {
+   
+        display: block;
+      }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .BgNav{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .BgNav{
+        display: block;
+    }
+  .hamburger {
+   
+    display: none;
+  }
+}
